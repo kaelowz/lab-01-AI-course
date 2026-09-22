@@ -74,4 +74,36 @@ CORPUS: Dict[str, Dict[str, str]] = {
     "sentence": SENTENCE,
     "complaint": COMPLAINT,
     "system_prompt": SYSTEM_PROMPT,
+    #CORE TASK 1:
+    "my_custom_text": {
+        "en": "Your password will expire in 3 days. Please update it immediately to maintain access to your account.",
+        "ru": "Ваш пароль истекает через 3 дня. Пожалуйста, немедленно обновите его для сохранения доступа к аккаунту.",
+        "kk": "Сіздің құпия сөзіңіздің мерзімі 3 күннен кейін аяқталады. Аккаунтқа кіруді сақтау үшін оны дереу жаңартыңыз."
+    },
+
+    #CORE TASK 2: 
+    "kk_shared_letters": {
+        "en": "Marat found an apple outside.", 
+        "ru": "Марат нашел яблоко на улице.", 
+        "kk": "Марат далада алма тапты" 
+    },
+    "kk_specific_letters": {
+        "en": "Grandma lives in the region.", 
+        "ru": "Бабушка живет в регионе.",     
+        "kk": "Әжең өңірде өмір сүреді" 
+    },
+
+    #CORE TASK 3: Prose vs JSON
+    "complaint_json": {
+        "en": '{"opened": "March", "message": "I have attached the contract and the statement. Why did the rate change?", "documents_attached": true}',
+        "ru": '{"opened": "Март", "message": "Я прикрепил договор и выписку. Почему изменилась ставка?", "documents_attached": true}',
+        "kk": '{"opened": "Наурыз", "message": "Мен келісімшарт пен үзінді көшірмені тіркедім. Неліктен мөлшерлеме өзгерді?", "documents_attached": true}'
+    },
+
+    #ADVANCED TASK 4:
+    "system_prompt_short": {
+        "en": "Answer strictly based on documents. Be concise.",
+        "ru": "Отвечай строго по документам. Будь краток. Не придумывай факты.",
+        "kk": "Құжаттарға сүйеніп қана қысқа жауап беріңіз. Фактілерді ойдан шығармаңыз."
+    }
 }
